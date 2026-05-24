@@ -40,7 +40,7 @@ test('Create and delete article', async ({ api }) => {
             article: { title: "new roya", description: "mokhtari", body: "test", tagList: [] }
         })
         .postRequest(201)
-    expect(creatArticleResponse.article.title).toEqual("new roya111")
+    expect(creatArticleResponse.article.title).toEqual("new roya")
     const slugID = creatArticleResponse.article.slug
 
     const getArticleResponse = await api
